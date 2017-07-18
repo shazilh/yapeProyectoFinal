@@ -1,9 +1,8 @@
-@import 'grid';
 @import 'query-sizes';
 @import 'colors';
 
 .boton{
-    background-color: red;
+    background-color: $Amarill-botones;
 }
  #container-carousel, #container-parrafos {
      @media screen and (min-width: $break-small) {
@@ -25,3 +24,9 @@ h6{
 }
 
 /*REGISTRO*/
+.imagen-registro{
+    magin-top:200px;
+}
+btn_amarillo_registro{
+     background-color: $Amarill-botones;
+}
