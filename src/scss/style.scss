@@ -1,0 +1,27 @@
+@import 'grid';
+@import 'query-sizes';
+@import 'colors';
+
+.boton{
+    background-color: red;
+}
+ #container-carousel, #container-parrafos {
+     @media screen and (min-width: $break-small) {
+        width: $full-width;
+    }
+    @media screen and (min-width: $break-medium) {
+        width: $medium-width;
+    }
+    @media screen and (min-width: $break-large) {
+        width: $small-width;
+    }
+}
+h6{
+    color:black;
+}
+.imagenes{
+    width:200px;
+    height: 200px;
+}
+
+/*REGISTRO*/
