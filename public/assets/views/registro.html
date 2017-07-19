@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="/static/assets/css/style.css">
-    <link rel="stylesheet" type="text/css" href="/static/materialize-css/dist/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="../../static/materialize-css/dist/css/materialize.min.css">
     <title>Yape Mexico</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
@@ -26,7 +26,7 @@
             </div>
             <div class="row">
                 <div class="col s12 m12">
-                    <h6 class="">Recibirás un SMS con un código de validación</h6>
+                    <h6 class="letraGris">Recibirás un SMS con un código de validación</h6>
                 </div>
             </div>
             <div class="row">
@@ -35,20 +35,19 @@
                         <div class=" center">
                             <form action="" id="registro-form">
                                 <h5>
-                                    <i class="material-icons">phonelink_ring</i> <span class=""> (+51)</span> <input type="number" class="registro"></h5>
+                                    <i class="material-icons">phonelink_ring</i> <span class=""> (+51)</span> <input type="number" class="inputRegistro"></h5>
                             </form>
                         </div>
                         <form action="#">
-                                <input name="group1" type="checkbox" id="test1" />
-                                <label for="test1"><p>Acepta los <span class="Terminos Y condicionees"><a href="">Términos y condiciones</a></span></p></label>
-                            
+                            <input name="group1" type="checkbox" id="checkBoxRegistro"/>
+                            <label for="test1"><p class="center">Acepta los <span class="Terminos Y condiciones"><a href="">Términos y condiciones</a></span></p></label>
                         </form>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col s12 m12">
-                    <a class="waves-effect btn btn_amarillo_registro">CONTINUAR</a>
+                    <a class="waves-effect btn btn_amarillo_registro" style="background-color:yellow" id="btnRegistro">CONTINUAR</a>
                 </div>
             </div>
         </div>

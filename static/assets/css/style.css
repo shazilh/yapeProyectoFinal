@@ -1,28 +1,44 @@
 .boton {
   background-color: #fbd43b; }
 
-@media screen and (min-width: 320px) {
-  #container-carousel, #container-parrafos {
-    width: 100%; } }
-@media screen and (min-width: 720px) {
-  #container-carousel, #container-parrafos {
-    width: 50%; } }
-@media screen and (min-width: 1200px) {
-  #container-carousel, #container-parrafos {
-    width: 30%; } }
-
 h6 {
   color: black; }
 
 .imagenes {
-  width: 200px;
-  height: 200px; }
+  width: 100%;
+  height: 200px !important; }
 
 /*REGISTRO*/
 .imagen-registro {
-  magin-top: 200px; }
+  margin-top: 200px; }
 
-btn_amarillo_registro {
+.btn_amarillo_registro {
+  background-color: #fbd43b; }
+
+.black-text {
+  color: black; }
+
+.carousel .indicators .indicator-item {
+  background-color: rgba(16, 0, 0, 0.2); }
+
+.carousel .indicators .indicator-item.active {
+  background-color: rgba(255, 0, 0, 0.6); }
+
+.indicators {
+  margin-top: 60%; }
+
+#test1 {
+  margin-top: 100px; }
+
+img {
+  width: 100%;
+  height: 200px !important; }
+
+/*estilos para pantalla registro*/
+.letraGris {
+  color: #8f8f8f !important; }
+
+.btn_amarillo_registro {
   background-color: #fbd43b; }
 
 /*# sourceMappingURL=style.css.map */
