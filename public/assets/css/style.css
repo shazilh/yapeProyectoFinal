@@ -1,3 +1,45 @@
+#habilitarBoton {
+  background-color: #fbd43b; }
 
+h6 {
+  color: black; }
+
+#container-carousel {
+  width: 50%; }
+
+/*REGISTRO*/
+.imagen-registro {
+  margin-top: 100px;
+  width: 200px;
+  height: 200px; }
+
+#btnRegistro {
+  background-color: #fbd43b; }
+
+.black-text {
+  color: black; }
+
+.carousel .indicators .indicator-item {
+  background-color: rgba(16, 0, 0, 0.2); }
+
+.carousel .indicators .indicator-item.active {
+  background-color: rgba(255, 0, 0, 0.6); }
+
+.indicators {
+  margin-top: 60%; }
+
+#test1 {
+  margin-top: 100px; }
+
+img {
+  width: 100%;
+  height: 200px !important; }
+
+/*estilos para pantalla registro*/
+.letraGris {
+  color: #8f8f8f !important; }
+
+.btn_amarillo_registro {
+  background-color: #fbd43b; }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,43 +1,40 @@
-$(document).ready(function(){
-      $('.carousel').carousel();
-     
-    });
+$(document).ready(function () {
+    $('.carousel').carousel();
+    validar();
+});
+//***Funcion de verificación pantalla Registro//***
+function verificandoNumeroTel() {
+	var $ingresarInput = $('#inputNumTel').val().length;
+    var $ingresarInputCorrecto = $('#inputNumTel').val();
+	return $ingresarInput == 10;
+    console.log($ingresarInput);
+    
+     /*if ($ingresarInputCorrecto != Number){
+        alert("Favor de ingresar solo numeros");
+        $ingresarInput ="";
+    }*/
+}
 
-  var $inputRegistro = $(".inputRegistro");
-     var $btnRegistro = $("#btnRegistro");
-     var $form = $("#registro-form");
-     var $check = $("#checkBoxRegistro");
+function verificandoCheckbox() {
+	var $check = $('#checkDeTerminos');
+	return $check.is(':checked');
+    console.log($check.is(':checked'));
+}
 
-     console.log($check);
+function habilitarBoton() {
+	var $btn = $('#btnContinuar');
+	if(verificandoNumeroTel() && verificandoCheckbox()){
+		$btn.removeClass('disabled');
+	}
+	else{
+		$btn.addClass('disabled');
+	}
+}
+function validar() {
+	$('#inputNumTel').on('change', habilitarBoton);
+	$('#checkDeTerminos').change(habilitarBoton);
+}
+//****Termina la función de la primera validación****
 
-     $form.submit(sacarNumero)
-     $inputRegistro.keyup(contador)
-
- 
-
- function contador() {
-     var contador = $inputRegistro.val().length
-     if (contador == 10) {
-         $btnRegistro.removeAttr("disabled")
-         
-     } else {
-         $btnRegistro.attr("disabled", "true")
-         $check.removeAttr("checked")
-     }
-     
-   
-     
-     if($check.check){
-         console.log("hola");
-     }
-
- }
-
- function sacarNumero(e) {
-     e.preventDefault();
-     console.log($inputRegistro.val())
- }
-
- 
 
 

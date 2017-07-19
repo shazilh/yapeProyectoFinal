@@ -18,17 +18,21 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(express.static('public'));
 app.use(morgan(format));
+app.use('/static', express.static(path.join(__dirname,'node_modules')));
+app.use('/static', express.static(path.join(__dirname, 'public')));
+
+
 
 let router = express.Router();
 
 router.get('/', (req, res) => {
   res.json({ name: 'yape-api',version: "0.0.1"});
-  
+  res.sendFile(__dirname+ 'public/index.html');
+    
 });
 
 app.use('/api',apiUsers(router,db));
-app.use('/static', express.static(path.join(__dirname,'node_modules')));
-app.use('/static', express.static(path.join(__dirname, 'public')));
+
 
 const port = process.env.PORT || 3000;
 
