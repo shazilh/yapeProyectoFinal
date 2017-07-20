@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="/static/assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/static/materialize-css/dist/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Ingresa tu Código</title>
+</head>
+
+<body>
+
+    <section class="container">
+        <div class="row center-align">
+            <div class="col s12 m12 l12">
+                <img class="imagen-registro responsive-img" src="/img/icons/lockone.png">
+            </div>
+            <div class="row">
+                <h5 class="center"><strong>Crea tu usuario Yape</strong></h5>
+                <p class="center gray-text">Ingresa un nombre, email y clave de usuario.<span id="phoneRegistered"></span>.</p>
+            </div>
+            <div class="container">
+                <form id="formCode">
+                    <div class="input-field">
+                        <div class="input-field">
+                            <div class="gray-text">
+                                <i class="material-icons prefix">child_care</i>
+                                <input id="userName" type="tel" class="center validate" placeholder="Nombre">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-field">
+                        <div class="input-field">
+                            <div class="gray-text">
+                                <i class="material-icons prefix">mail_outline</i>
+                                <input id="userMail" type="tel" class="center validate" placeholder="correo@ejemplo.com">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-field">
+                        <div class="input-field">
+                            <div class="gray-text">
+                                <i class="material-icons prefix">lock_outline</i>
+                                <input id="userPass" type="tel" class="center validate" placeholder="Ingresa tu clave de 6 dígitos">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <p class="center gray-text col s10 offset-s1">Cuida esta clave como oro, es tu acceso a Yape
+                        </p>
+                    </div>
+                    <div class="row center">
+                        <button id="btn-next" class="btn waves-effect waves-light btn-yellow" type="submit" name="action" disabled>CONTINUAR</button>
+                    </div>
+                    <a href="bien.html">IR</a>
+
+                </form>
+            </div>
+        </div>
+
+            <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+            <script src="/static/materialize-css/dist/js/materialize.min.js"></script>
+
+            <script src="/static/assets/js/main.js"></script>
+
+    </section>
+</body>
+
+</html>

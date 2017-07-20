@@ -35,7 +35,12 @@ h6 {
 /*REGISTRO*/
 .imagen-registro {
   margin-top: 20px;
-  width: 150px;
+  width: 120px;
+  height: 100px; }
+
+.imagenCheck {
+  margin-top: 200px;
+  width: 120px;
   height: 100px; }
 
 #btnRegistro {
@@ -65,11 +70,14 @@ img {
   color: #8f8f8f !important; }
 
 .btn_amarillo_registro {
-  background-color: #fbd43b; }
+  background-color: #fbd43b !important; }
 
 /*estilos ingresarCodigo.html*/
 .titulo {
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 300px; }
+
+.amarillo {
+  background-color: #fbd43b; }
 
 /*# sourceMappingURL=style.css.map */

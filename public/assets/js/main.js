@@ -4,12 +4,14 @@ $(document).ready(function () {
     });
     validar();
     $('#btnContinuar').click(registrarNumeroTel);
+    mostrarNumTel();
 });
 
 var Api = {
     urlRegistro: "http://localhost:3000/api/registerNumber",
     urlCodigo: "http://localhost:3000/api//resendCode"
 };
+var $numeroTel;
 
 //***Funcion de verificación pantalla Registro//***
 function verificandoNumeroTel() {
@@ -61,35 +63,42 @@ function validar() {
 var registrarNumeroTel = function (e) {
     e.preventDefault();
     var $numeroTelefono = $('#inputNumTel').val();
-    console.log($numeroTelefono);
+    //console.log($numeroTelefono);
+
     $.post(Api.urlRegistro, {
         "phone": $numeroTelefono,
         "terms": true
     }).then(function (response) {
-        console.log(response)
+        //console.log(response)
         alert("Código de Validación: " + response.data.code);
         window.location.href = "ingresarCodigo.html ";
-        validacion(response);
+        localStorage.setItem("phone", response.data.phone);
+        localStorage.setItem("code", response.data.code);
+        mostrarNumTel();
+        validarCodigo();
     }).catch(function (error) {
         console.log(error);
         alert("El teléfono que ingresaste ya ha sido registrado");
     })
 }
-
 //**Funcion para ingresarCodigo.html
-function validacion(response) {
-    if (response.success == true) {
-        var respuestaData = response.data;
-        console.log(respuestaData);
-        var terminos = respuestaData.terms;
-        var telefono = respuestaData.phone;
-        var codigo = respuestaData.code;
-        //se declaran variables para obtener la data de la respuesta
-        localStorage.setItem("phone", telefono);
-        localStorage.setItem("code", codigo);
-        console.log(response.data.code)
-
-
-    }
-
+function mostrarNumTel() {
+    $('#numTelefonico').html(localStorage.getItem("phone"));
+    console.log(numTelefonico);
 };
+
+//**Funcion validar codigo***
+var contador = 0;
+
+var validarCodigo = function () {
+    setTimeout(function () {
+        contador = 21;
+    }, 21000);
+    var $codigoValidacion = localStorage.getItem("code");
+    var $codigoIngresado = $('#ingresarCodigo').val();
+    if ($codigoIngresado == $codigoValidacion && contador < 21) {
+        location.href = "/static/assets/views/crearUsuario.html";
+    } else {
+        generarNuevoCodigo();
+    }
+}

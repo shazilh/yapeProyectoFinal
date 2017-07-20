@@ -38,7 +38,12 @@ h6{
 /*REGISTRO*/
 .imagen-registro{
     margin-top:20px;
-    width: 150px;
+    width: 120px;
+    height: 100px;
+}
+.imagenCheck{
+    margin-top: 200px;
+     width: 120px;
     height: 100px;
 }
 #btnRegistro{
@@ -70,12 +75,14 @@ img{
     color: $Gris-letra-soft !important;
 }
 .btn_amarillo_registro{
-    background-color: $Amarill-botones;
+    background-color: $Amarill-botones !important;
 }
 /*estilos ingresarCodigo.html*/
 .titulo{
-    font-size:40px;
+    font-size:30px;
     font-weight: 300px;
 }
-
+.amarillo{
+    background-color: $Amarill-botones;
+}
 
