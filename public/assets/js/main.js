@@ -1,11 +1,13 @@
 $(document).ready(function () {
-    $('.carousel').carousel();
+    $('.carousel.carousel-slider').carousel({fullWidth: true});
     validar();
+    $('#btnContinuar').click(registrarNumeroTel);
 });
 
-var url = "http://localhost:3000/api/registerNumber";
-
-
+var Api = {
+    urlRegistro:"http://localhost:3000/api/registerNumber",
+    urlCodigo: "http://localhost:3000/api//resendCode"
+};
 
 //***Funcion de verificación pantalla Registro//***
 function verificandoNumeroTel() {
@@ -40,8 +42,6 @@ function habilitarBoton() {
     var $btn = $('#btnContinuar');
     if (verificandoNumeroTel() && verificandoCheckbox()) {
         $btn.removeClass('disabled');
-        postCheck(verificandoCheckbox());
-        postInput(verificandoNumeroTel());
     } else {
         $btn.addClass('disabled');
 
@@ -49,37 +49,26 @@ function habilitarBoton() {
 }
 
 function validar() {
-    $('#inputNumTel').on('change', habilitarBoton);
+    $('#inputNumTel').keyup(habilitarBoton);
     $('#checkDeTerminos').change(habilitarBoton);
 }
-//****Termina la función de la primera validación****
+//****Terminan las funciones de las primeras validaciones****
 
 //**MANDANDO POSTS AL API
-function getJSON(url) {
-    return new Promise(function (resolve, reject) {
-        var ajax = new XMLHttpRequest();
-
-        ajax.open("POST", url);
-        ajax.send();
-
-        ajax.onreadystatechange = function (data) {
-            if (ajax.readyState == 4) {
-                resolve(JSON.parse(ajax.responseText));
-            }
-        }
-    })
-
-};
-
-var postInput = function () {
-    $.post(url, {
-        'phone': numero
-    })
+//**Primera peticion**//
+var registrarNumeroTel = function (e) {
+    e.preventDefault();
+    var $numeroTelefono = $('#inputNumTel').val();
+    console.log($numeroTelefono);
+    $.post(Api.urlRegistro, {
+        "phone": $numeroTelefono,
+        "terms": true
+    }).then(function (response){
+		console.log(response)
+		alert("Código de Validación: " + response.data.code);
+		window.location.href="ingresarCodigo.html ";
+	}).catch(function (error) {
+        console.log(error);
+        alert("El teléfono que ingresaste ya ha sido registrado");
+    })		
 }
-
-
-var postCheck = function () {
-    $.post(url, {
-        'terms': true
-    })
-};

@@ -1,11 +1,36 @@
 #habilitarBoton {
-  background-color: #fbd43b; }
+  background-color: #fbd43b;
+  width: 60%; }
 
 h6 {
   color: black; }
 
 #container-carousel {
-  width: 50%; }
+  height: 50vh; }
+
+.carousel-height {
+  min-height: 70vh; }
+
+.img-alto {
+  height: 180px;
+  display: inline-block;
+  width: 30%;
+  margin: 10% 0 0 0; }
+
+.gray-text {
+  color: #8f8f8f; }
+
+.padd__sides-10 {
+  padding: 0 10px; }
+
+.carousel .indicators .indicator-item.active {
+  background-color: #f64552 !important; }
+
+.carousel .indicators .indicator-item {
+  background-color: #f8f8f8 !important; }
+
+.carousel .indicators {
+  bottom: 2% !important; }
 
 /*REGISTRO*/
 .imagen-registro {

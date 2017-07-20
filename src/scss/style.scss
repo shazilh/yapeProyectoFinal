@@ -2,13 +2,38 @@
 
 #habilitarBoton{
     background-color: $Amarill-botones;
+    width: 60%;
 }
 h6{
     color:black;
 }
 
 #container-carousel{
-    width: 50%;
+    height: 50vh;
+}
+.carousel-height{
+	min-height: 70vh;
+}
+.img-alto{
+    height: 180px;
+    display: inline-block;
+    width: 30%;
+    margin: 10% 0 0 0;
+}
+.gray-text{
+    color:$Gris-letra-soft;
+}
+.padd__sides-10{
+	padding: 0 10px;
+}
+.carousel .indicators .indicator-item.active  {
+    background-color: $Rojo-bullet!important;
+}
+.carousel .indicators .indicator-item {
+    background-color: $Gris-bullet!important;;
+}
+.carousel .indicators {
+    bottom: 2%!important;;
 }
 /*REGISTRO*/
 .imagen-registro{
