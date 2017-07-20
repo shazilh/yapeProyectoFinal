@@ -67,8 +67,15 @@ img{
 }
 /*estilos para pantalla registro*/
 .letraGris{
-    color: #8f8f8f !important;
+    color: $Gris-letra-soft !important;
 }
 .btn_amarillo_registro{
     background-color: $Amarill-botones;
 }
+/*estilos ingresarCodigo.html*/
+.titulo{
+    font-size:40px;
+    font-weight: 300px;
+}
+
+

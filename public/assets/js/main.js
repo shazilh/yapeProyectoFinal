@@ -1,11 +1,13 @@
 $(document).ready(function () {
-    $('.carousel.carousel-slider').carousel({fullWidth: true});
+    $('.carousel.carousel-slider').carousel({
+        fullWidth: true
+    });
     validar();
     $('#btnContinuar').click(registrarNumeroTel);
 });
 
 var Api = {
-    urlRegistro:"http://localhost:3000/api/registerNumber",
+    urlRegistro: "http://localhost:3000/api/registerNumber",
     urlCodigo: "http://localhost:3000/api//resendCode"
 };
 
@@ -63,12 +65,31 @@ var registrarNumeroTel = function (e) {
     $.post(Api.urlRegistro, {
         "phone": $numeroTelefono,
         "terms": true
-    }).then(function (response){
-		console.log(response)
-		alert("Código de Validación: " + response.data.code);
-		window.location.href="ingresarCodigo.html ";
-	}).catch(function (error) {
+    }).then(function (response) {
+        console.log(response)
+        alert("Código de Validación: " + response.data.code);
+        window.location.href = "ingresarCodigo.html ";
+        validacion(response);
+    }).catch(function (error) {
         console.log(error);
         alert("El teléfono que ingresaste ya ha sido registrado");
-    })		
+    })
 }
+
+//**Funcion para ingresarCodigo.html
+function validacion(response) {
+    if (response.success == true) {
+        var respuestaData = response.data;
+        console.log(respuestaData);
+        var terminos = respuestaData.terms;
+        var telefono = respuestaData.phone;
+        var codigo = respuestaData.code;
+        //se declaran variables para obtener la data de la respuesta
+        localStorage.setItem("phone", telefono);
+        localStorage.setItem("code", codigo);
+        console.log(response.data.code)
+
+
+    }
+
+};

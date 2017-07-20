@@ -67,4 +67,9 @@ img {
 .btn_amarillo_registro {
   background-color: #fbd43b; }
 
+/*estilos ingresarCodigo.html*/
+.titulo {
+  font-size: 40px;
+  font-weight: 300px; }
+
 /*# sourceMappingURL=style.css.map */

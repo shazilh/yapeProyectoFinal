@@ -6,32 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="/static/assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="../../static/materialize-css/dist/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Ingresa tu Código</title>
 </head>
 
 <body>
 
-    <section class="">	
-				<div class="row center-align">	
-					<div class="col s8 offset-s2">	
-						<img src="/img/icons/message.png">
-						<h3 class="center-align">Ahora ingresa tu código</h3>
-						<h5 class="center-align">Enviamos un SMS con el código de validación al número <span id="number"></span></h5>
-					</div>
-				</div>
-				<div class="row">
-					<form>
-						<div class="col s8 offset-s2">	
-							<div class="row">
-								<div class="input-field">
-									<input placeholder="(+51)" id="first_name" type="number" class="validate" maxlength="9">
-									<h5 class="center-align">Reintentar en 21 seg.</h5>
-								</div>
-						    </div>
-						</div>
-					</form>	
-				</div>
-		</section>
+    <section class="">
+        <div class="row center-align">
+            <div class="col s12">
+                <img class="imagen-registro"  src="/img/icons/message.png">
+                <p class="center-align titulo">Ahora ingresa tu código</p>
+                <h6 class="center-align col s10 offset-s1 letraGris">Enviamos un SMS con el código de validación al número <span id="number"></span></h6>
+            </div>
+        </div>
+        <div class="row">
+            <form>
+                <div class="col s8 offset-s2">
+                    <div class="row">
+                        <div class="input-field letraGris">
+                            <i class="material-icons prefix ">lock_outline</i>
+                            <input placeholder=" -                -                  -            - " id="first_name" type="number" class="validate center" maxlength="9">
+                            <h6 class="center-align letraGris ">Reintentar en <i class="material-icons">query_builder</i>21 seg.</h6>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
 
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
