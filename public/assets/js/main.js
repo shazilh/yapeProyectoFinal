@@ -88,17 +88,15 @@ function mostrarNumTel() {
 };
 
 //**Funcion validar codigo***
-var contador = 0;
-
 var validarCodigo = function () {
-    setTimeout(function () {
-        contador = 21;
-    }, 21000);
     var $codigoValidacion = localStorage.getItem("code");
     var $codigoIngresado = $('#ingresarCodigo').val();
-    if ($codigoIngresado == $codigoValidacion && contador < 21) {
+    if ($codigoIngresado == $codigoValidacion) {
         location.href = "/static/assets/views/crearUsuario.html";
     } else {
-        generarNuevoCodigo();
+        setTimeout();
     }
-}
+}   
+
+setTimeout(function(){ location.href="/static/assets/views/registro.html";},21000);
+

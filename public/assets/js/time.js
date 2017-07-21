@@ -1,5 +1,4 @@
 function cargarPagina(){
-    setTimeout(function(){ location.href="/static/assets/views/registraDebito.html";},3000);
+    setTimeout(function(){ location.href="/static/assets/views/registraDebito.html";},10000);
 }
 cargarPagina();
-alert("siiiii");
