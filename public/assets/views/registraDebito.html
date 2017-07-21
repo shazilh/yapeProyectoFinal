@@ -7,60 +7,65 @@
     <link rel="stylesheet" type="text/css" href="/static/assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="/static/materialize-css/dist/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <title>Bien</title>
+    <title>Registro de Tarjeta de Credito</title>
 </head>
 
 <body>
 
     <section class="container-fluid">
-        <div class="row div-img__mg-tp">
-            <div class="col s4 offset-s4 div-img__pd-tp">
-                <img src="assets/img/icons/bcp-logo.png" alt="phone" class="div-img__hija">
+        <div class="row">
+            <div class="col s12 center">
+                <img src="/img/icons/bcp-logo.png" alt="phone" class="imagen-registro responsive-img">
             </div>
         </div>
         <div class="row">
             <div class="col s10 offset-s1">
                 <h5 class="center-align"><strong>Registra tu tarjeta débito BCP</strong></h5>
-                <p class="center-align">Por ahora sólo aceptamos cuentas de ahorro y/o corriente en soles</p>
+                <p class="center-align letraGris">Por ahora sólo aceptamos cuentas de ahorro y/o corriente en soles</p>
             </div>
         </div>
-          <div class="row">
+        <div class="container">
             <form class="col s12">
-              <div class="row mg-cero">
-                <div class="input-field col s10 offset-s1" id="pantalla-seis-input-imgs">
-                    <input id="stay_current_portrait" type="number" min="1" max="16" class="validate">
-                    <label for="stay_current_portrait">
-                        <img src="assets/img/icons/card.png" alt="credit card">
+                <div class="row center">
+                    <div class="input-field col s10 offset-s1" id="pantalla-seis-input-imgs">
+                        <input id="stay_current_portrait" type="number" min="1" max="16" class="validate">
+                        <label for="stay_current_portrait">
+                        <img class="tamanoImagen" src="/img/icons/card.png" alt="credit card">
                     </label>
-                    <span class="col s8 offset-s2 "><a href="#"><img src="assets/img/icons/scan.png" alt="">Escanear tarjeta</a></span>
-                
-                </div>
-              </div>
-                <div class="row" id="fecha-vencimiento">
-                    <div class="col s12 offset-s1">
-                        <span class="col s6">Fecha de vencimiento</span>
-                        <div class="col s2">
-                            <input type="date" class="datepicker"placeholder=" Mes">
-                        </div>
-                        <div class="col s2 offset-s1">
-                            <input type="date" class="datepicker"placeholder=" Año">
-                        </div>
+                        <span class="col s9 offset-s2 center "><a href="#"><img class="tamanoImagen" src="/img/icons/scan.png" alt="">Escanear tarjeta</a></span>
+
                     </div>
-                    <div class="col s8 offset-s2">
-                        <a class="btn waves-effect waves-light darken-text-2 btn__width center-align disabled" type="submit" name="action"  href="pantalla-tres.html">
+                </div>
+                <div class="container">
+                    <div class="row" id="fecha-vencimiento">
+                        <div class="col s12 center">
+                            <span class="col s6 letraGris fechaVenc">Fecha de vencimiento</span>
+                            <div class="col s2">
+                                <input placeholder=" Mes">
+                            </div>
+                            <div class="col s2">
+                                <div>/</div>
+                            </div>
+                            <div class="col s2">
+                                <input placeholder=" Año">
+                            </div>
+                        </div>
+                        <div class="col s12 center">
+                            <a class="btn waves-effect waves-light btn__width center-align btn_amarillo_registro" type="submit" name="action" href="ingresarClave.html">
                                 CONTINUAR
                             </a>
+                        </div>
                     </div>
                 </div>
             </form>
-          </div>
+        </div>
 
     </section>
-    
+
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="/static/materialize-css/dist/js/materialize.min.js"></script>
     <script src="/static/assets/js/main.js"></script>
-    
+
 
 </body>
 

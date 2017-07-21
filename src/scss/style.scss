@@ -80,9 +80,16 @@ img{
 /*estilos ingresarCodigo.html*/
 .titulo{
     font-size:30px;
-    font-weight: 300px;
+    font-weight: 30px;
 }
 .amarillo{
     background-color: $Amarill-botones;
 }
-
+/*Estilos pantalla regitraDebito.html*/
+.tamanoImagen{
+    width: 20px;
+    height: 20px!important;
+}
+.fechaVenc{
+    margin-top: 13px;
+}
