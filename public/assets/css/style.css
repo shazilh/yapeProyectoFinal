@@ -88,4 +88,44 @@ img {
 .fechaVenc {
   margin-top: 13px; }
 
+/*Estilos ultima pantalla*/
+.contenedor-Saludo {
+  background-color: #451e36; }
+
+.contenedor-Saludo--engraneCont__img {
+  width: 5% !important;
+  height: 5% !important; }
+
+.imgCentral-Cont--imgCara {
+  width: 15% !important;
+  height: 15% !important;
+  margin-top: 100px; }
+
+.saldoLetra {
+  color: #00c3a3; }
+
+.eye {
+  width: 5% !important;
+  height: 5% !important; }
+
+.contenedor-morado-fuerte {
+  background-color: #38052a; }
+
+.flecha-img-cont {
+  width: 4% !important;
+  height: 4% !important;
+  margin-bottom: 10px; }
+
+.ultMov {
+  font-size: 20px;
+  margin-top: 20px; }
+
+.imgCont-cactus--img {
+  width: 150px;
+  height: 150px; }
+
+.enviarRecibir-almacen--img {
+  width: 100px !important;
+  height: 100px !important; }
+
 /*# sourceMappingURL=style.css.map */

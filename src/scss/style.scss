@@ -1,95 +1,176 @@
 @import 'colors';
-
-#habilitarBoton{
+#habilitarBoton {
     background-color: $Amarill-botones;
     width: 60%;
 }
-h6{
-    color:black;
+
+h6 {
+    color: black;
 }
 
-#container-carousel{
+#container-carousel {
     height: 50vh;
 }
-.carousel-height{
-	min-height: 70vh;
+
+.carousel-height {
+    min-height: 70vh;
 }
-.img-alto{
+
+.img-alto {
     height: 180px;
     display: inline-block;
     width: 30%;
     margin: 10% 0 0 0;
 }
-.gray-text{
-    color:$Gris-letra-soft;
-}
-.padd__sides-10{
-	padding: 0 10px;
-}
-.carousel .indicators .indicator-item.active  {
-    background-color: $Rojo-bullet!important;
-}
-.carousel .indicators .indicator-item {
-    background-color: $Gris-bullet!important;;
-}
-.carousel .indicators {
-    bottom: 2%!important;;
-}
-/*REGISTRO*/
-.imagen-registro{
-    margin-top:20px;
-    width: 120px;
-    height: 100px;
-}
-.imagenCheck{
-    margin-top: 200px;
-     width: 120px;
-    height: 100px;
-}
-#btnRegistro{
-     background-color: $Amarill-botones;
+
+.gray-text {
+    color: $Gris-letra-soft;
 }
 
-.black-text{
-    color:black;
-}
-.carousel .indicators .indicator-item {
-  background-color: rgba(16, 0, 0, 0.2);
+.padd__sides-10 {
+    padding: 0 10px;
 }
 
 .carousel .indicators .indicator-item.active {
-  background-color: rgba(255, 0, 0, 0.6);
+    background-color: $Rojo-bullet!important;
 }
+
+.carousel .indicators .indicator-item {
+    background-color: $Gris-bullet!important;
+    ;
+}
+
+.carousel .indicators {
+    bottom: 2%!important;
+    ;
+}
+
+
+/*REGISTRO*/
+
+.imagen-registro {
+    margin-top: 20px;
+    width: 120px;
+    height: 100px;
+}
+
+.imagenCheck {
+    margin-top: 200px;
+    width: 120px;
+    height: 100px;
+}
+
+#btnRegistro {
+    background-color: $Amarill-botones;
+}
+
+.black-text {
+    color: black;
+}
+
+.carousel .indicators .indicator-item {
+    background-color: rgba(16, 0, 0, 0.2);
+}
+
+.carousel .indicators .indicator-item.active {
+    background-color: rgba(255, 0, 0, 0.6);
+}
+
 .indicators {
-  margin-top: 60%;
+    margin-top: 60%;
 }
- #test1{
+
+#test1 {
     margin-top: 100px;
 }
-img{
+
+img {
     width: 100%;
     height: 200px !important;
 }
+
+
 /*estilos para pantalla registro*/
-.letraGris{
+
+.letraGris {
     color: $Gris-letra-soft !important;
 }
-.btn_amarillo_registro{
+
+.btn_amarillo_registro {
     background-color: $Amarill-botones !important;
 }
+
+
 /*estilos ingresarCodigo.html*/
-.titulo{
-    font-size:30px;
+
+.titulo {
+    font-size: 30px;
     font-weight: 30px;
 }
-.amarillo{
+
+.amarillo {
     background-color: $Amarill-botones;
 }
+
+
 /*Estilos pantalla regitraDebito.html*/
-.tamanoImagen{
+
+.tamanoImagen {
     width: 20px;
     height: 20px!important;
 }
-.fechaVenc{
+
+.fechaVenc {
     margin-top: 13px;
+}
+
+
+/*Estilos ultima pantalla*/
+
+.contenedor-Saludo {
+    background-color: $Morado-light;
+}
+
+.contenedor-Saludo--engraneCont__img {
+    width: 5%!important;
+    height: 5% !important;
+}
+
+.imgCentral-Cont--imgCara {
+    width: 15%!important;
+    height: 15% !important;
+    margin-top: 100px;
+}
+
+.saldoLetra {
+    color: $Turquesa-Terminos-y-condiciones;
+}
+
+.eye {
+    width: 5%!important;
+    height: 5% !important;
+}
+
+.contenedor-morado-fuerte {
+    background-color: $Morado-dark;
+}
+
+.flecha-img-cont {
+    width: 4%!important;
+    height: 4% !important;
+    margin-bottom: 10px;
+}
+
+.ultMov {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.imgCont-cactus--img {
+    width: 150px;
+    height:150px ;
+}
+.enviarRecibir-almacen--img{
+    width: 100px!important;
+    height:100px !important;
 }
